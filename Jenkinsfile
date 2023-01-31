@@ -19,7 +19,7 @@ pipeline {
         }
 		stage('Read Me File '){
 		    when {
-			  branch "test"
+			  branch "Test-2"
 			}
 			steps {
 			  sh'''
