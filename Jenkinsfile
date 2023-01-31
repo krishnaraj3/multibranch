@@ -17,5 +17,15 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+		stage('Read Me File '){
+		    when {
+			  branch "test"
+			}
+			steps {
+			  sh'''
+			  cat readme.txt
+			  '''
+			}
+		}
     }
 }
