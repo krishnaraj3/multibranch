@@ -26,11 +26,11 @@ pipeline {
 			  cat readme.txt
 			  '''
 			}
+		}
 		stage('Finish') {
             steps {
                 echo 'Webhook Checked Correctly'
             }
         }
-		}
     }
 }
